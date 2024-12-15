@@ -1,0 +1,36 @@
+{
+    "name": "uaipassei-frontend",
+    "version": "1.0.0",
+    "description": "Frontend para o site UaiPassei, construído com Next.js, Tailwind CSS e TypeScript",
+    "main": "pages/_app.tsx",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "eslint . --ext .ts,.tsx",
+        "format": "prettier --write ."
+    },
+    "dependencies": {
+        "axios": "^1.7.9",
+        "classnames": "^2.3.2",
+        "next": "^15.1.0",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "typescript": "^5.7.2"
+    },
+    "devDependencies": {
+        "@types/node": "^20.17.10",
+        "@types/react": "^18.3.16",
+        "@types/react-dom": "^18.3.5",
+        "autoprefixer": "^10.4.20",
+        "eslint": "^8.49.0",
+        "eslint-config-next": "^14.0.0",
+        "postcss": "^8.4.49",
+        "postcss-cli": "^9.1.0",
+        "prettier": "^2.8.4",
+        "tailwindcss": "^3.4.16"
+    },
+    "engines": {
+        "node": ">=14.0.0"
+    }
+}
