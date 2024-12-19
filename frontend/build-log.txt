@@ -1,0 +1,9 @@
+
+> uaipassei-frontend@1.0.0 build
+> next build
+
+   ▲ Next.js 15.1.0
+
+   Creating an optimized production build ...
+ ⨯ page.tsx doesn't have a root layout. To fix this error, make sure every page has a root layout.
+Static worker exited with code: 1 and signal: null

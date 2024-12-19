@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { AppDataSource } from "../database/dataBase
+import { AppDataSource } from "../database/dataSource";
 import { Testimonial } from "../models/Testimonial";
 import { validate } from "class-validator";
 

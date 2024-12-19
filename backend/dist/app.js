@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 const dotenv_1 = __importDefault(require("dotenv"));
-const dataBaseurce_1 = require("./database/dataBaseurce");
+const dataSource_1 = require("./database/dataSource");
 const courseRoutes_1 = __importDefault(require("./routes/courseRoutes"));
 const testimonialRoutes_1 = __importDefault(require("./routes/testimonialRoutes"));
 require("reflect-metadata");
@@ -18,7 +18,7 @@ const app = (0, express_1.default)();
 app.use((0, cors_1.default)()); // Habilitar CORS
 app.use(express_1.default.json()); // Parse do corpo da requisição como JSON
 // Conectar ao banco de dados
-dataBaseurce_1.AppDataSource.initialize()
+dataSource_1.AppDataSource.initialize()
     .then(() => {
     console.log("Conectado ao banco de dados com sucesso!");
 })

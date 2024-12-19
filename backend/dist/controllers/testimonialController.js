@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteTestimonial = exports.updateTestimonial = exports.createTestimonial = exports.getTestimonials = void 0;
-const dataBase_1 = require("../database/dataBase");
+const dataSource_1 = require("../database/dataSource");
 const Testimonial_1 = require("../models/Testimonial");
 const class_validator_1 = require("class-validator");
-const testimonialRepository = dataBase_1.AppDataSource.getRepository(Testimonial_1.Testimonial);
+const testimonialRepository = dataSource_1.AppDataSource.getRepository(Testimonial_1.Testimonial);
 // Listar todos os depoimentos
 const getTestimonials = async (_, res) => {
     try {

@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import { AppDataSource } from "./database/dataBaseurce";
+import { AppDataSource } from "./database/dataSource";
 import courseRoutes from "./routes/courseRoutes";
 import testimonialRoutes from "./routes/testimonialRoutes";
 import "reflect-metadata";

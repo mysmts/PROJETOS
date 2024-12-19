@@ -1,10 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.deleteCourse = exports.updateCourse = exports.createCourse = exports.getCourses = void 0;
-const dataBase_1 = require("../database/dataBase");
+const dataSource_1 = require("../database/dataSource");
 const Course_1 = require("../models/Course");
 const class_validator_1 = require("class-validator");
-const courseRepository = dataBase_1.AppDataSource.getRepository(Course_1.Course);
+const courseRepository = dataSource_1.AppDataSource.getRepository(Course_1.Course);
 // Listar todos os cursos
 const getCourses = async (_, res) => {
     try {
